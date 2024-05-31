@@ -15,7 +15,7 @@ class AccountAdmin(admin.ModelAdmin):
     fieldsets = (
         (None, {'fields': ('username', 'password')}),
         ('Персональная информация', {'fields': (
-            'first_name', 'last_name', 'email', 'surname', 'date_of_birth'
+            'first_name', 'last_name', 'email', 'surname', 'date_of_birth', 'phone',
         )}),
         ('Разрешения', {'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')}),
         ('Даты', {'fields': ('last_login', 'date_joined')}),

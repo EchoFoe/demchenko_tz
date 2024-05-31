@@ -15,6 +15,8 @@ TELEGRAM_API_HASH = os.getenv('TELEGRAM_API_HASH')
 
 DEBUG = True
 
+AUTH_USER_MODEL = 'accounts.Account'
+
 ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
@@ -24,6 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'accounts',
 ]
 
 MIDDLEWARE = [
